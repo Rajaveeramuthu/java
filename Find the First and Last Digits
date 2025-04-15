@@ -1,0 +1,13 @@
+class FirstLast{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the numbers:");
+        int n=sc.nextInt();
+        int last =n%10;
+        while(n>10){
+            n=n/10;
+        }
+        System.out.println("last digits"+last);
+        System.out.println("First Digits"+n);
+    }
+}
