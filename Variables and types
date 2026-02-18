@@ -1,0 +1,65 @@
+instance variable
+
+class instanceVariable {
+    String name;
+
+    void display() {
+        System.out.print(name);
+    }
+
+    public static void main(String[] args) {
+        instanceVariable s1 = new instanceVariable();
+        s1.name = "raja";
+        s1.display();
+    }
+}
+
+
+local variable
+
+class local {
+    public static void main(String[] args) {
+        int n = 10;
+        System.out.print(n);
+    }
+}
+
+static variable
+
+class StaticValiable {
+    static String name;
+
+    public static void main(String[] args) {
+        System.out.print(StaticValiable.name = "raja");
+    }
+}
+
+final variable
+
+class FinalVariable {
+    final String name = "raja";
+
+    public static void main(String[] args) {
+//        System.out.print(FinalVariable.name);
+        FinalVariable obj = new FinalVariable();
+        System.out.print(obj.name);
+    }
+}
+
+
+final keyword with
+constructor
+
+class FinalVariable {
+    final int age;
+
+    FinalVariable() {
+        age = 20;
+    }
+
+    public static void main(String[] args) {
+        FinalVariable obj = new FinalVariable();
+        System.out.print(obj.age);
+    }
+
+}
